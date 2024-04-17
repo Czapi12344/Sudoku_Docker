@@ -20,7 +20,7 @@ const Board: React.FC<BoardProps> = ({ puzzle, initialPuzzle, onChange }) => {
   };
 
   return (
-    <div className="grid grid-cols-9 gap-1">
+    <div className="grid grid-rows-9  gap-1">
       {puzzle.map((row, rowIndex) => (
         <div key={rowIndex} className="flex">
           {row.map((cell, colIndex) => (
